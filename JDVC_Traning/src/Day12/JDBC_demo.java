@@ -20,10 +20,17 @@ public class JDBC_demo {
 		String username = "root";
 		String password="Prabal@07";
 		String query = "select * from sample";
-		Connection con = DriverManager.getConnection(url,username,password);/*getConnection(), which attempts 
-		to establish a connection to a specified database URL */
+		Connection con = DriverManager.getConnection(url,username,password);
+		/*The DriverManager class in JDBC (Java Database Connectivity)--> serves as a central 
+		 component for managing and interacting with JDBC drivers to establish connections 
+		 to databases. It acts as a factory for Connection objects and handles the process of 
+		 finding and loading the appropriate JDBC driver for a given database URL.
+		 
 		
-		/* Connection -> Establishing a connection in Java JDBC involves a series of steps to enable communication
+		getConnection(), which attempts 
+		to establish a connection to a specified database URL
+		
+		Connection -> Establishing a connection in Java JDBC involves a series of steps to enable communication
 		between a Java application and a database. The Connection object represents an active session 
 		with the database.*/
 		Statement st=con.createStatement();

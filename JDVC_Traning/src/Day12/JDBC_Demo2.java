@@ -17,6 +17,9 @@ public class JDBC_Demo2 {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
+			//forName ->This method is used to dynamically load the JDBC driver class into memory,
+			//which automatically registers it with the DriverManager.
+			
 			/*jvm is trying to load the jdbc class during the run time
 			if jar file is not found it will be getting error*/
 
